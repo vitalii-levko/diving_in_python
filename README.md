@@ -50,7 +50,7 @@ digit_string = sys.argv[1]
 
 ## Draw Steps
 
-Write a program that takes a number of steps as an argument and draws right aligned steps with '#' symbol.
+Write a program that takes a number of steps as an argument and draws right aligned steps with _'#'_ symbol.
 
 For example, _python3 draw_steps.py 4_ should print:
 
@@ -63,5 +63,20 @@ For example, _python3 draw_steps.py 4_ should print:
 
 ```python
 import sys
+
 num_steps = int(sys.argv[1])
+```
+
+## Quadratic Equation
+
+Write a program that takes coefficients as arguments and finds the root(s) of the corresponding quadratic equation.
+
+For example, _python3 quadratic_equation.py 1 -3 -4_ should print _4_ and _-1_.
+
+```python
+import sys
+
+a = int(sys.argv[1])
+b = int(sys.argv[2])
+c = int(sys.argv[3])
 ```
