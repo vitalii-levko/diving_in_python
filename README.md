@@ -47,3 +47,21 @@ import sys
 digit_string = sys.argv[1]
 
 ```
+
+## Draw Steps
+
+Write a program that takes a number of steps as an argument and draws right aligned steps with '#' symbol.
+
+For example, _python3 draw_steps.py 4_ should print:
+
+```javascript
+   #
+  ##
+ ###
+####
+```
+
+```python
+import sys
+num_steps = int(sys.argv[1])
+```
