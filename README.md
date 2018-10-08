@@ -41,7 +41,7 @@ Create a module _solution.py_ that takes a string argument and summarize digits 
 
 For example, _python3 solution.py 873_ should print _18_.
 
-````python
+```python
 import sys
 
 digit_string = sys.argv[1]
