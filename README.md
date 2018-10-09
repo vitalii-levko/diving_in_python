@@ -80,3 +80,15 @@ a = int(sys.argv[1])
 b = int(sys.argv[2])
 c = int(sys.argv[3])
 ```
+
+## Median
+
+Create a Jupyter Notebook with a program that generates random number list and finds the median of this list.
+
+For example, the median of the list _numbers = [12, 13, 12, 15]_ is _12.5_.
+
+```python
+import random
+
+numbers = []
+```
