@@ -141,7 +141,24 @@ For example, _stringify_list([1, 2, 3])_ should return _['1', '2', '3']_.
 
 ```python
 def stringify_list(num_list):
-    pass
+    return None
 
 print(stringify_list([1, 2, 3]))
+```
+
+## Logger
+
+Create a decorator that takes a log file name as an argument and writes the result of a corresponding function to the specified log file.
+
+For example
+
+```python
+@logger('log.txt')
+def summator(num_list):
+    return sum(num_list)
+
+summator(range(7))
+
+with open('log.txt', 'r') as f:
+    print(f.read())
 ```
