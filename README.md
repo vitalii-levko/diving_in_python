@@ -150,7 +150,7 @@ print(stringify_list([1, 2, 3]))
 
 Create a decorator that takes a log file name as an argument and writes the result of a corresponding function to the specified log file.
 
-For example
+For example _summator(range(7)_ should output result _21_ to the file _'log.txt'_.
 
 ```python
 @logger('log.txt')
@@ -161,4 +161,16 @@ summator(range(7))
 
 with open('log.txt', 'r') as f:
     print(f.read())
+```
+
+## Fibonacci Numbers
+
+Create a program that takes a number as an argument and prints all the Fibonacci numbers till the given one.
+
+For example _python3 fibonacci.py 42_ should print _1, 1, 2, 3, 5, 8, 13, 21, 34_.
+
+```python
+import sys
+
+pass
 ```
