@@ -122,3 +122,26 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
 ``` 
+
+## Random10
+
+Using Jupyter Notebook write a program that finds how many iterations were done for the function _random.randint(1, 10)_ to receive duplicate value.
+
+```python
+import random
+
+new_number = random.randint(1, 10)
+```
+
+## Stringify
+
+Within Jupyter Notebook write a function that takes a list of numbers and returns a list of corresponding string values.
+
+For example, _stringify_list([1, 2, 3])_ should return _['1', '2', '3']_.
+
+```python
+def stringify_list(num_list):
+    pass
+
+print(stringify_list([1, 2, 3]))
+```
