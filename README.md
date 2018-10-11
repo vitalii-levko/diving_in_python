@@ -1,6 +1,9 @@
 # diving in python
 
-## Geolocation Request
+## Basic Types and Constructs
+## Code Organization and Environment
+
+### Geolocation Request
 
 Create a new environment. Activate it and install module _requests_. Write a function to get location info in json format.
 
@@ -35,7 +38,7 @@ if __name__ == "__main__":
     pprint.pprint(get_location_info())
 ```
 
-## Digit Sum
+### Digit Sum
 
 Create a module _solution.py_ that takes a string argument and summarize digits in it.
 
@@ -48,7 +51,7 @@ digit_string = sys.argv[1]
 
 ```
 
-## Draw Steps
+### Draw Steps
 
 Write a program that takes a number of steps as an argument and draws right aligned steps with _'#'_ symbol.
 
@@ -67,7 +70,7 @@ import sys
 num_steps = int(sys.argv[1])
 ```
 
-## Quadratic Equation
+### Quadratic Equation
 
 Write a program that takes coefficients as arguments and finds the root(s) of the corresponding quadratic equation.
 
@@ -81,7 +84,10 @@ b = int(sys.argv[2])
 c = int(sys.argv[3])
 ```
 
-## Median
+## Collections
+## Functions
+
+### Median
 
 Create a Jupyter Notebook with a program that generates random number list and finds the median of this list.
 
@@ -93,7 +99,7 @@ import random
 numbers = []
 ```
 
-## The Zen of Python
+### The Zen of Python
 
 Create a Jupyter Notebook with a program that finds 3 most common words in _The Zen of Python_.
 
@@ -123,7 +129,7 @@ Namespaces are one honking great idea -- let's do more of those!
 """
 ``` 
 
-## Random10
+### Random10
 
 Using Jupyter Notebook write a program that finds how many iterations were done for the function _random.randint(1, 10)_ to receive duplicate value.
 
@@ -133,7 +139,7 @@ import random
 new_number = random.randint(1, 10)
 ```
 
-## Stringify
+### Stringify
 
 Within Jupyter Notebook write a function that takes a list of numbers and returns a list of corresponding string values.
 
@@ -146,7 +152,7 @@ def stringify_list(num_list):
 print(stringify_list([1, 2, 3]))
 ```
 
-## Logger
+### Logger
 
 Create a decorator that takes a log file name as an argument and writes the result of a corresponding function to the specified log file.
 
@@ -163,7 +169,7 @@ with open('log.txt', 'r') as f:
     print(f.read())
 ```
 
-## Fibonacci Numbers
+### Fibonacci Numbers
 
 Create a program that takes a number as an argument and prints all the Fibonacci numbers till the given one.
 
@@ -173,4 +179,19 @@ For example _python3 fibonacci.py 42_ should print _1, 1, 2, 3, 5, 8, 13, 21, 34
 import sys
 
 pass
+```
+
+### Key-Value Storage
+
+Using _argparse_ and _json_ modules create a program that takes key and value as arguments and stores them in a temporary file or takes only key and prints already stored value(s).
+
+E.g. _sotrage.py --key key_name --val value_ should store corresponding pair in JSON format in the file. And _storage.py --key key_name_ should print either a value(s) from the file or _None_ if not exists.
+
+```python
+import os
+import tempfile
+
+storage_path = os.path.join(tempfile.gettempdir(), 'storage.data')
+with open(storage_path, 'w') as f:
+    pass
 ```
