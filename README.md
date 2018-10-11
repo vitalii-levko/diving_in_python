@@ -1,4 +1,4 @@
-# diving in python
+# Diving in Python
 
 ## Basic Types and Constructs
 ## Code Organization and Environment
@@ -194,4 +194,20 @@ import tempfile
 storage_path = os.path.join(tempfile.gettempdir(), 'storage.data')
 with open(storage_path, 'w') as f:
     pass
+```
+
+### To JSON
+
+In Jupyter Notebook write a decorator _to_json_ that could be used with different fucntions to convert their return value to JSON format.
+
+E.g. _get_data()_ should return '{"data": 42}'
+
+```python
+@_to_json
+def get_data():
+    return {
+        'data': 42
+    }
+
+get_data()  # returns '{"data": 42}'
 ```
