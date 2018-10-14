@@ -198,16 +198,37 @@ with open(storage_path, 'w') as f:
 
 ### To JSON
 
-In Jupyter Notebook write a decorator _to_json_ that could be used with different fucntions to convert their return value to JSON format.
+Within Jupyter Notebook write a decorator _to_json_ that could be used with different fucntions to convert their return value to JSON format.
 
-E.g. _get_data()_ should return '{"data": 42}'
+E.g. _get_data()_ should return '{"data": 42}'.
 
 ```python
-@_to_json
+@to_json
 def get_data():
     return {
         'data': 42
     }
 
 get_data()  # returns '{"data": 42}'
+```
+
+## Classes and Objects
+
+### Weather Forecast
+
+Create a program that prints a weather forecast for the specified city for the next 10 days.
+
+E.g. _python3 forecast.py kyiv_ should print:
+
+```javascript
+[{'date': datetime.datetime(2018, 10, 12, 0, 0), 'high_temp': '17'},
+ {'date': datetime.datetime(2018, 10, 13, 0, 0), 'high_temp': '15'},
+...
+ {'date': datetime.datetime(2018, 10, 21, 0, 0), 'high_temp': '15'}]
+```
+
+```python
+import pprint
+
+pprint.pprint(forecast)
 ```
