@@ -232,3 +232,14 @@ import pprint
 
 pprint.pprint(forecast)
 ```
+
+### File Reader
+
+Create a module _solution.py_ with the class _FileReader_ inside. Class initializer should take a path to the file on the hard disk as an argument.
+
+Class _FileReader_ should have the _read_ method that returns file's content as a string. When exception _IOError_ occurs this method should return an empty string.
+
+```python
+reader = FileReader("example.txt")
+print(reader.read())
+```
