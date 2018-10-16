@@ -58,8 +58,8 @@ Write a program that takes a number of steps as an argument and draws right alig
 For example, _python3 draw_steps.py 4_ should print:
 
 ```javascript
-     #
-    ##
+   #
+  ##
  ###
 ####
 ```
