@@ -9,6 +9,12 @@ class CarBase:
         self.photo_file_name = photo_file_name
         self.carrying = float(carrying)
 
+    def __str__(self):
+        return self.brand
+
+    def __repr__(self):
+        return f"{self.car_type} {self.brand}"
+
     def get_photo_file_ext(self):
         photo_file = os.path.splitext(self.photo_file_name)
         return photo_file[1]
