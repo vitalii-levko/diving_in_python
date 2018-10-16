@@ -32,10 +32,10 @@ For example, _python geolocation_request.py_ might return:
 import pprint
 
 def get_location_info():
-	return None
+  return None
 
 if __name__ == "__main__":
-	pprint.pprint(get_location_info())
+  pprint.pprint(get_location_info())
 ```
 
 ### Digit Sum
@@ -147,7 +147,7 @@ For example, _stringify_list([1, 2, 3])_ should return _['1', '2', '3']_.
 
 ```python
 def stringify_list(num_list):
-	return None
+  return None
 
 print(stringify_list([1, 2, 3]))
 ```
@@ -161,12 +161,12 @@ For example _summator(range(7)_ should output result _21_ to the file _'log.txt'
 ```python
 @logger('log.txt')
 def summator(num_list):
-	return sum(num_list)
+  return sum(num_list)
 
 summator(range(7))
 
 with open('log.txt', 'r') as f:
-	print(f.read())
+  print(f.read())
 ```
 
 ### Fibonacci Numbers
@@ -193,7 +193,7 @@ import tempfile
 
 storage_path = os.path.join(tempfile.gettempdir(), 'storage.data')
 with open(storage_path, 'w') as f:
-	pass
+  pass
 ```
 
 ### To JSON
@@ -205,9 +205,9 @@ E.g. _get_data()_ should return '{"data": 42}'.
 ```python
 @to_json
 def get_data():
-	return {
-		'data': 42
-	}
+  return {
+    'data': 42
+  }
 
 get_data()  # returns '{"data": 42}'
 ```
@@ -252,35 +252,35 @@ Create a program that reads the file 'cars.csv' and creates a list of correspond
 import csv
 
 class CarBase:
-	def _init__(self, brand, photo_file_name, carrying):
-		pass
+  def _init__(self, brand, photo_file_name, carrying):
+    pass
 
-	def get_photo_file_ext(self):
-		pass
+  def get_photo_file_ext(self):
+    pass
 
 class Car(CarBase):
-	def __init__(self, brand, photo_file_name, carrying, passenger_seats_count):
-		pass
+  def __init__(self, brand, photo_file_name, carrying, passenger_seats_count):
+    pass
 
 class Truck(CarBase):
-	def __init__(self, brand, photo_file_name, carrying, body_whl):
-		pass
+  def __init__(self, brand, photo_file_name, carrying, body_whl):
+    pass
 
-	def get_body_volume(self):
-		pass
+  def get_body_volume(self):
+    pass
 
 class SpecMachine(CarBase):
-	def __init__(self, brand, photo_file_name, carrying, extra):
-		pass
+  def __init__(self, brand, photo_file_name, carrying, extra):
+    pass
 
 def get_car_list(csv_filename):
-	car_list = []
+  car_list = []
 
-	with open(csv_filename) as csv_fd:
-		reader = csv.reader(csv_fd, delimiter=';')
-		next(reader)
-		for row in reader:
-			print(row)
+  with open(csv_filename) as csv_fd:
+    reader = csv.reader(csv_fd, delimiter=';')
+    next(reader)
+    for row in reader:
+      print(row)
 
-	return car_list
+  return car_list
 ```
