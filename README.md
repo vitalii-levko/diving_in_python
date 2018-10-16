@@ -248,7 +248,7 @@ print(reader.read())
 
 Create a program that reads the file 'cars.csv' and creates a list of corresponding objects.
 
-```ptyhon
+```python
 import csv
 
 class CarBase:
@@ -282,5 +282,5 @@ def get_car_list(csv_filename):
 				for row in reader:
 						print(row)
 
-	return car_list
+		return car_list
 ```
