@@ -233,6 +233,8 @@ import pprint
 pprint.pprint(forecast)
 ```
 
+## Work with errors
+
 ### File Reader
 
 Create a module _solution.py_ with the class _FileReader_ inside. Class initializer should take a path to the file on the hard disk as an argument.
@@ -284,6 +286,8 @@ def get_car_list(csv_filename):
 
     return car_list
 ```
+
+## Special Class Methods
 
 ### File Interface
 
