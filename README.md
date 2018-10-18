@@ -233,7 +233,7 @@ import pprint
 pprint.pprint(forecast)
 ```
 
-## Work with errors
+## Work with Errors
 
 ### File Reader
 
@@ -319,4 +319,23 @@ obj = File('/tmp/file.txt')
 
 print(obj)
 '/tmp/file.txt'
+```
+
+## The Mechanism of the Classes
+
+### Commission Descriptor
+
+Write the descriptor _Value_ that should be used within _Account_ class. When the _amount_ attribute is being setting the commission should be subtracted appropriately.
+
+```python
+class Account:
+    amount = Value()
+
+    def __init__(self, commission):
+        self.commission = commission
+
+new_account = Account(0.1)
+new_account.amount = 100
+
+print(new.account.amount) # 90
 ```
