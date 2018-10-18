@@ -284,3 +284,35 @@ def get_car_list(csv_filename):
 
     return car_list
 ```
+
+### File Interface
+
+Create the _File_ interface that:
+
+* should be initialized with the absolute path
+```python
+obj = File('/tmp/file.txt')
+```
+* has the _write_ method
+```python
+obj.write('line\n')
+```
+* supports add operation creating new File object and file which contains content of both files 
+```python
+first = File('/tmp/first')
+second = File('/tmp/second')
+
+new_obj = first + second
+```
+* supports iteration protocol returning file by lines
+```python
+for line in File('/tmp/file.txt'):
+    ...
+```
+* returns the path when printing it
+```python
+obj = File('/tmp/file.txt')
+
+print(obj)
+'/tmp/file.txt'
+```
